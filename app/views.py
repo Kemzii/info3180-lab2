@@ -29,7 +29,7 @@ def about():
 @app.route('/profile')
 def profile():
     """Render fake profile page."""
-    return render_template('profile.html', dtime = format_date_joined())
+    return render_template('profile.html', dtime = format_date_joined())    
 
 
 ###
@@ -63,7 +63,7 @@ def page_not_found(error):
 
 def format_date_joined():
     """format date"""
-    dtime = time.strftime("%a, %d %b %y")
+    dtime = time.strftime("%b %y")
     return dtime
 
 
