@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block css %}
+
+<link href="{{ url_for('static', filename='css/profile.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block main %}
+
+<div class="head">
+           
+       
+
+<img src= "{{ url_for('static', filename='joker.jpg') }}" alt="Picture of Me">
+<h1>King Kemz</h1>
+<h3> @Kemzii</h3>
+<h2> Maui, Hawaii <br> Joined {{dtime}} </h2>
+
+</div>
+<div class = "body">
+<p>I'm an excellent young talent great at web design and implementation. Contact me for success.</p>
+<br>
+<table align="center">
+  <tr>
+    <th>13</th>
+    <th>7</th> 
+    <th>517</th>
+  </tr>
+  <tr>
+    <td>Posts</td>
+    <td>Following</td> 
+    <td>Followers</td>
+  </tr>
+</table>
+<br>
+<button type="button" class = "button">Follow</button>
+</div>
+
+{% endblock %}
